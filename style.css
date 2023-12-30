@@ -1,0 +1,32 @@
+.profile{
+  justify-content: center;
+  
+}
+.h2{
+  text-align: center;
+}
+
+.accordion {
+    background-color: #eee;
+    color: none;
+    cursor: pointer;
+    padding: 16px;
+    width: 100%;
+    border-color: #eee;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #df9696; 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }

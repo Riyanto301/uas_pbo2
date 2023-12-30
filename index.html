@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="profile">
+<h2 class="h2">MENGHITUNG LUAS BANGUN DATAR</h2>
+<p>Nama     : Riyanto</p>
+<p>Nim      : 0402221010</p>
+<p>Semester : 3</p>
+</div>
+
+<button class="accordion">PERSEGI PANJANG</button>
+<div class="panel">
+  <p>menghitung luas dan keliling persegi panjang (dalam satuan cm )</p>
+
+  <form class="inputan_persegi">
+    <tr>
+    <label for="panjang">Masukan Panjang :</label>
+    <input type="number" id="panjang" name="panjang" placeholder="Masukan Panjang..">
+   
+    
+    
+    <label for="lebar">masukan Lebar :</label>
+    <input type="number" id="lebar" name="lebar" placeholder="Masukan Lebar..">
+  </tr>
+    <input class="hitung" type="button" value="Hitung" onclick="hitungLuasDanKelilingPersegiPanjang()">
+    <input class="reset" type="button" value="Reset" onclick="reset()">
+
+    <label for="luasPersegi">Luas :</label>
+    <input type="text" id="luasPersegi" name="luasPersegi" placeholder="0" readonly>
+
+    <label for="kelilingPersegi">Keliling :</label>
+    <input type="text" id="kelilingPersegi" name="kelilingPersegi" placeholder="0" readonly>
+</form>
+</div>
+
+<button class="accordion">BUJUR SANGKAR</button>
+<div class="panel">
+  <p>Masukkan panjang sisi bujur sangkar (dalam satuan cm):</p>
+  <input type="number" id="sisi">
+  <button onclick="hitung()">Hitung</button>
+  <button onclick="reset()">Reset</button>
+  <p id="luas"></p>
+  <p id="keliling"></p>
+  
+</div>
+
+<button class="accordion">LINGKARAN</button>
+<div class="panel">
+  <p>menghitung luas dan keliling lingkaran</p>
+  <p>Masukkan nilai jari-jari (dalam satuan cm)</p>
+  <p>Jari-Jari: <input type="number" id="jariJari"></p>
+  <button onclick="hitungLingkaran()">Hitung</button>
+  <button onclick="reset()">reset</button>
+  <p id="luasLingkaran"></p>
+  <p id="kelilingLingkaran"></p>
+</div>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
